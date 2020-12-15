@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Mirrored from max.cfw.sh/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Dec 2020 10:35:15 GMT -->
+<head>
+    <title>ScooterHacking.org :: Max CFW Builder</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="img/icons/favicon.png">
+
+    <meta property="og:title" content="ScooterHacking.org :: Max CFW Builder">
+    <meta property="og:image" content="img/icons/fblogo.html">
+    <meta property="og:image:width" content="200" />
+    <meta property="og:image:height" content="200" />
+
+</head>
+
+<body class="container">
+    <form action="https://max.cfw.sh/submit" id="cfwform">
+        <input type="hidden" name="version" value="DRV126" />
+        <input type="hidden" name="output" id="output" value="zip2" />
+        <!----- /////////////////////////// -->
+
+        <div id="disclaimer" class="modal red darken-4 white-text">
+            <div class="modal-content">
+                <h4><i class="material-icons">warning</i> <a href="8ung.jpg" target="_BLANK">WARNING!!</a> Disclaimer</h4>
+                <b><u>Be aware that a higher motor power will shorten the lifetime of your battery and could damage your controller.</u></b>
+                <br />
+                <br /> <b>You are responsible for the values you enter.</b>
+                Please remember that ScooterHacking.org or its members can not be held responsible for any damage you may cause to yourself or your scooter.
+                <br />
+                <br />Please check local laws before riding your modded scooter on a public place.
+                <br />In countries such as Germany, modifying your scooter might void its permit. In other countries such as France, you face a fine upto 1500€ for going over the 25km/h speed limit.
+                <br /><br /><b>ScooterHacking.org and cfw.sh are not affiliated with Segway-Ninebot or any other brand.</b>
+            </div>
+            <div class="modal-footer red darken-2 white-text"> <a href="#" class="modal-close btn-flat white-text">Continue</a>
+            </div>
+        </div>
+        <div id="paramsinfo" class="modal green darken-1 white-text" style="width: 350px;padding: 10px;">
+            <div class="modal-content">
+
+                <div class="modal-footer green darken-2 white-text"> <a href="#!" class="modal-close btn-flat white-text">Continue</a>
+                </div>
+            </div>
+        </div>
+        <a href="https://cfw.sh/"><img src="img/logo.2.1.png" alt="" width="300px" class="center"></a>
+        <!-- Contenedor -->
+        <ul id="accordion" class="accordion effect7">
+            <li>
+                <div class="link"><i class="material-icons">favorite</i>Welcome to ScooterHacking Toolkit for Ninebot Max G30<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenutxt" style="display: block;">
+
+                    <li>
+                        <!-- <font color="orange">An open-beta is currently ongoing. To access the dev branch, you can click <a href="/dev">HERE</a>.</font></p> -->
+                        <p>
+                        <div class="row s10">
+                            <div class="col s5">Download plain vanilla firmware by <u><a href="https://cfw.sh/blob/VlYMt8s_4GZKYChb5gW3zA/DRV126-VANILLA.zip">clicking here</a></u></div>
+                            <div class="col s5 right-align"><input type="button" class="btn right-align" id="themeTrigger" onClick="switchTheme();" value="DARK MODE: N/A"></div>
+                        </div>
+                        <!-- <b>Check a firmware code:</b>
+                            <br />
+                            <input style="width: 52.5%" type="text" name="check" id="check" size="16" pattern="^[a-z0-9_\-]+$" /><a href="#" onclick="getTextVanilla();" class="waves-effect waves-light btn" style="width: 50%; position: absolute;"><i class="material-icons right">info</i>Check</a> -->
+                        <b>Join us on </b>
+                        <a href="https://scooterhack.in/discord" target="_BLANK" class="chip">
+                            <img src="img/discord.png">Discord</a>
+                        <a href="https://scooterhack.in/tgchat" target="_BLANK" class="chip tooltipped" data-tooltip="@scooterhackingchat">
+                            <img src="img/telegram.png">Telegram</a><br />
+                        <img style="position: inherit;" src="img/max-512.png" align="right" width="150" height="150" />
+                        </p>
+                        <p><b><br /><br />This tool is based on the work of many community members.
+                                <br />If you feel like it, pay them a coffee.</b>
+                        </p>
+                        <center>
+                            <a href="https://scooterhack.in/donate" target="_BLANK" class="chip tooltipped" data-tooltip="Backend maintainer & UI designer">
+                                <img src="img/scooterhacking.png">ScooterHacking.org</a>
+                            <a href="https://paypal.me/BotoXbz" target="_BLANK" class="chip tooltipped" data-tooltip="Creator of M365 CFW Toolkit">
+                                <img src="img/395711.png">BotoX</a>
+                            <a href="https://paypal.me/majsinko" target="_BLANK" class="chip tooltipped" data-tooltip="CFW Scripting">
+                                <img src="img/5780472.png">majsi</a>
+                            <a href="https://paypal.me/camialfa" target="_BLANK" class="chip tooltipped" data-tooltip="Creator of ES downG & M365 downG">
+                                <img src="img/downg.png">CamiAlfa</a>
+                            <a href="https://rollerplausch.com/" target="_BLANK" class="chip tooltipped" data-tooltip="Original UI designer">
+                                <img src="img/rollerplausch.png"> RollerPlausch.com</a>
+                            <a href="#" class="chip tooltipped" data-tooltip="New web & embedded UI designer">
+                                <img src="img/knocker.png">Knocker</a>
+                        </center>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="changelog/index.html">
+                    <div class="link"><i class="material-icons">format_list_bulleted</i>Changelog</div>
+                </a>
+            <li>
+                <div class="link"><i class="material-icons">sd_card</i>Presets<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu">
+                    <li>
+                        <input type="button" class="btn" onClick="loadPreset('default');" value="Reset form">&nbsp;&nbsp;
+                        <input type="button" class="btn" id="import-no-save" value="Load from params" onclick="document.getElementById('file-selector-a').click();">
+                        <input type="file" id="file-selector-a" accept=".json" style="display: none;"><br />
+                        <b>ScooterHacking presets</b><br />
+                        <input type="button" class="btn" onClick="loadPreset('lothean');" value="Lothean"> &nbsp;
+                        <input type="button" class="btn" onClick="loadPreset('shmax');" value="SHMax"> &nbsp;
+                        <input type="button" class="btn" onClick="loadPreset('rp');" value="Voreingestellt">
+                        <br /><br />
+                        <b>REMEMBER</b>
+                        <br />Although we have tested these presets, there are no guarantees that they will not break your scooter.<br />Drive responsible!</p>
+                        <b>User preset</b>
+                        <font color="orange">Beta!</font><br />
+                        This preset is stored in your browser. You can load it, overwrite it, or clear it at your convenience.<br />
+                        You can import any params.json file from the patcher output.<br />
+                        <input type="button" class="btn" id="load" value="Load" onclick="loadConfig();">&nbsp;&nbsp;
+                        <input type="button" class="btn" id="save" value="Save" onclick="saveConfig();">&nbsp;&nbsp;
+                        <input type="button" class="btn" id="clear" value="Clear" onclick="clearConfig();">&nbsp;&nbsp;
+                        <input type="button" class="btn" id="export" value="Export" onclick="exportConfig();">&nbsp;&nbsp;
+                        <input type="button" class="btn" id="import" value="Import" onclick="document.getElementById('file-selector-b').click();">
+                        <input type="file" id="file-selector-b" accept=".json" style="display: none;">
+
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link"><i class="material-icons">settings_input_composite</i>Basics<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu">
+                    <li>
+                        <p>
+                            <label>
+                                <input type="checkbox" name="compat_patches" class="cfw-param" checked /><span><b>Compatibility patches</b></span>
+                            </label>
+                            <br />Prepares the firmware for a modded environment. Brings back SN change, removes speedbost serial check and enforces selected patcher region.
+                        </p>
+                        <p>
+                            <label>
+                                <select id="region" name="region" class="cfw-param">
+                                    <option value="auto">Auto. (based on serial number)</option>
+                                    <option value="us" selected>America</option>
+                                    <option value="de">Germany</option>
+                                    <option value="eu">Worldwide</option>
+                                </select> <span>Select wanted scooter region..</span>
+                            </label>
+                            <br />
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" name="remove_charging_mode" class="cfw-param" /><span><b>Remove Charging Mode</b></span>
+                            </label>
+                            <br />ESC will ignore input from the charging line, scooter will be rideable during charge. Useful for non-official external batteries.
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" name="version_spoofing" id="version_spoofing" value="on" class="cfw-param" checked /><span><b>Version spoofing</b></span>
+                            </label>
+                            <br />Makes the version number higher to prevent DRV updates from the Ninebot app.
+                        </p>
+
+                        <p>
+                            "Remember Last Mode" is default. Any other selection will boot the scooter into the selected Mode.
+                            <label>
+                                <select id="boot_workmode" name="boot_workmode" class="cfw-param">
+                                    <option value="3" selected>Remember last mode</option>
+                                    <option value="1">Eco</option>
+                                    <option value="0">Drive</option>
+                                    <option value="2">Sports</option>
+                                </select> <span>Boot in mode..</span>
+                            </label>
+
+                        </p>
+                        <br />
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link"><i class="material-icons">whatshot</i>Power & Speed<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu">
+                    <li>
+
+                                   <b>Battery Current Control</b> | Standard: 25A (36V)
+                                    <input type="button" onclick="resetCurrent(); handleTheJoules(default_ampere*1000);" value="reset" class="btn"><br>
+                                    <p><b>Higher = More power. Too much power is not recommended for battery and motor life.</b>
+                                        <br />This value does not affect top speed.
+                                        <br />
+                                        <br />
+                                        <small>All selectable ​​values were tested at stock battery voltage and caused no damage to the tested scooters. However, you should select a value considering other factors such as elevated ambient temperatures (e.g. in summer), differences in component quality or battery mods.</small>
+                                        <br />
+                                        <br />
+                                        <select id="voltage" name="voltage" onchange="default_voltage = this.value; resetCurrent();handleTheJoules(default_ampere*1000)">
+                                            <option value="36" selected>36V (default)</option>
+                                            <option value="48">48V</option>
+                                        </select><span>System Voltage (for estimated draw display ONLY)</span><br />
+                                        <br />Estimated draw - Nominal <b><output name="power_output" id="power_output">350</output>W</b> | Peak <b><output name="p_power_output" id="p_power_output">700</output>W</b>
+                                    </p>
+
+                                    <p class="range-wrap" style="text-align: center">
+                                        <b style="font-size: 16px;"><output name="speed_normal_battery_output" id="speed_normal_battery_output">25</output>A</b><br />
+                                        <input id="speed_normal_battery" name="speed_normal_battery" type="range" min="10000" max="65000" value="25000" step="1000" oninput="handleTheJoules(this.value);" class="cfw-param" />
+                                        <br />
+                                        <span class="left"><i class="material-icons white-text icon-pull-down">keyboard_arrow_left</i><b>Range</b></span>
+                                        <span class="right"><b>Torque</b><i class="material-icons white-text icon-pull-down">keyboard_arrow_right</i></span>
+                                    </p><br />
+                                    <p id="phases_info" style="display: none"><b>Phase Current Control</b> | Standard: 55A</p>
+                                    <p id="phases" class="range-wrap" style="text-align: center; display: none">
+                                        <b style="font-size: 16px;"><output name="speed_normal_phase_output" id="speed_normal_phase_output">55</output>A</b><br />
+                                        <input id="speed_normal_phase" name="speed_normal_phase" type="range" min="10000" max="65000" value="55000" step="1000" oninput="speed_normal_phase_output.value=speed_normal_phase.value/1000" disabled />
+                                        <br />
+                                    </p>
+                                    <br />
+                                    <br />
+
+
+                            <h6><b>Max speed</b></h5>
+                                <p><b>The scooter will stay below this speed. (Add +1 to actually drive this fast)</b><br />
+                                    <br />
+                                </p>
+                                <small>With stock battery voltage (36-42V), the scooter will not go faster than 33km/h at full charge.</small>
+                                <p class="range-field" id="vmax-range">
+                                    <label id="us_speed">US region</label> <b style="font-size: 16px;margin-left: 53px;"><output name="speed_normal_kmh_output">33</output></b><br />
+                                    <input type="range" name="speed_normal_kmh" class="white cfw-param" id="vmax" min="20" max="45" value="33" step="1" oninput="speed_normal_kmh_output.value=speed_normal_kmh.value" />
+                                    <label id="eu_speed">Worldwide region</label> <b style="font-size: 16px;margin-left: 8px;"><output name="speed_normal_kmh_eu_output" id="speed_normal_kmh_eu_output">27</output></b><br />
+                                    <input type="range" name="speed_normal_kmh_eu" class="white cfw-param" id="vmax_eu" min="20" max="45" value="27" step="1" oninput="speed_normal_kmh_eu_output.value=speed_normal_kmh_eu.value" />
+                                    <label id="de_speed">DE region</label> <b style="font-size: 16px;margin-left: 52px;"><output name="speed_normal_kmh_de_output" id="speed_normal_kmh_de_output">22</output></b><br />
+                                    <input type="range" name="speed_normal_kmh_de" class="white cfw-param" id="vmax_de" min="20" max="45" value="22" step="1" oninput="speed_normal_kmh_de_output.value=speed_normal_kmh_de.value" />
+                                    <span class="left"><b>20 km/h</b></span><span class="right"><b>45 km/h</b></span>
+                                </p><br />
+                                <p>
+                                    <label><input type="checkbox" id="patch_all" name="patch_all" onchange="handleTheWorld();" class="cfw-param" /><span>Patch for all serial numbers?</span></label><br />
+                                </p>
+                                <p>
+                                    <label>
+                                        <select id="direct_power_control" name="direct_power_control" class="cfw-param">
+                                            <option value="off" selected>Always off, speed-based</option>
+                                            <option value="reg">Switchable, register</option>
+                                            <option value="dyn">Switchable, brake</option>
+                                            <option value="on">Always on</option>
+                                        </select> <span>Direct power control</span>
+                                    </label>
+                                    <label>
+                                        <select id="direct_power_control_curve" name="direct_power_control_curve" class="cfw-param">
+                                            <option value="flat" selected>Flat</option>
+                                            <option value="quadratic">Quadratic</option>
+                                        </select> <span>Curve type (DPC only)</span>
+                                    </label>
+                                    <br />Instead of speed-based, the throttle will work on a power-based algorithm (like in a thermal engine vehicle).
+                                    <br /> <b>WARNING: Speed limit is ignored while using DPC.</b>
+                                </p>
+                                <p>
+                                    <label><input type="number" name="current_raising_coefficient" min="100" max="16000" value="300" class="cfw-param" /><span>Current raising coefficient</span></label><br />
+                                    How fast current will be applied. Affecting throttle speed up rate. <font color="orange">Updated!</font><br />
+                                </p>
+
+                                <h6><b>Motor Start Speed</b></h5>
+                                    <p><b>Minimum speed in km/h before the motor will start.</b><br /></p>
+                                    <p class="range-field" id="startspeed-range" style="text-align: center">
+                                        <b style="font-size: 16px;"><output name="motor_start_speed_output">5</output></b><br />
+                                        <input type="range" name="motor_start_speed" class="white cfw-param" id="mpc" min="0" max="10" value="5" step="1" oninput="motor_start_speed_output.value=motor_start_speed.value" />
+                                        <span class="left"><b>0 km/h</b></span><span class="right"><b>10 km/h</b></span>
+                                    </p>
+
+
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link"><i class="material-icons">settings_backup_restore</i>Braking & energy recovery<i class="fa fa-chevron-down"></i></div>
+                <ul class="submenu">
+                    <li>
+                        <b>Brake lever params</b> | Standard: 120 / 6A / 35A <input type="button" onclick="resetBrake();" value="reset" class="btn"><br>
+                        <p class="range-field" id="brake-range">
+                            <label id="brake_limit_label">Lever virtual limit</label> <b style="font-size: 16px;margin-left: 8px;"><output name="brake_limit_output" id="brake_limit_output">120</output></b><br />
+                            <input id="brake_limit" name="brake_limit" type="range" min="1" max="130" value="120" step="1" oninput="brake_limit_output.value=(brake_limit.value);" class="cfw-param" />
+                            <label id="brake_i_min_label">Minimum phase current</label> <b style="font-size: 16px;margin-left: 8px;"><output name="brake_i_min_output" id="brake_i_min_output">6</output>A</b><br />
+                            <input id="brake_i_min" name="brake_i_min" type="range" min="1000" max="50000" value="6000" step="1000" oninput="brake_i_min_output.value=(brake_i_min.value/1000)" class="cfw-param" />
+                            <label id="brake_i_max_label">Maximum phase current</label> <b style="font-size: 16px;margin-left: 8px;"><output name="brake_i_max_output" id="brake_i_max_output">35</output>A</b><br />
+                            <input id="brake_i_max" name="brake_i_max" type="range" min="1000" max="50000" value="35000" step="1000" oninput="brake_i_max_output.value=(brake_i_max.value/1000)" class="cfw-param" />
+                            <span class="left"><b>Less</b></span><span class="right"><b>More</b></span>
+                        </p>
+                        <br /> <br />
+                        <h6><b>KERS Min Speed</b></h5>
+                            <p><b>Speed in km/h at which the scooter will start braking on it's own when the motor is not active.</b><br /></p>
+                            <p class="range-field" id="kersminspeed-range" style="text-align: center">
+                                <b style="font-size: 16px;"><output name="kers_min_speed_output">6</output></b><br />
+                                <input type="range" name="kers_min_speed" class="white cfw-param" id="kers_min_speed" min="0" max="10" value="6" step="1" oninput="kers_min_speed_output.value=kers_min_speed.value" />
+                                <span class="left"><b>0 km/h</b></span><span class="right"><b>10 km/h</b></span>
+                            </p>
+
+                            <br /><br />
+                            <p>
+                                <label><input type="checkbox" name="no_kers" class="cfw-param" /><span><b>No KERS</b></span></label><br />
+                                The scooter won't start braking on it's own when the motor is not active.
+                                You will still have recuperative braking when using the brake lever. <b>Clonk-free.</b> <br>
+                            </p>
+                            <p>
+                                <label><input type="number" name="brake_current_raising_coefficient" min="100" max="8000" value="500" class="cfw-param" /><span>Current raising coefficient</span></label><br />
+                                How fast current will be applied. Affecting brake speed up rate. <font color="orange">Updated!</font><br />
+                            </p>
+                            <p>
+                                <label>
+                                    <select id="brake_light_mode" name="brake_light_mode" class="cfw-param">
+                                        <option value="stock" selected>Default</option>
+                                        <option value="static">Static</option>
+                                        <option value="reversed">Reversed</option>
+                                        <option value="strobe">Strobe</option>
+                                    </select> <span>Brake light mode</span>
+                                </label>
+
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="number" name="brake_light_flash_frequency" step="1" min="0" max="255" value="235" class="cfw-param" /><span>Brake light flash frequency</span>
+                                    <br />
+                                </label>
+
+                            </p>
+
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link"><i class="material-icons">loupe</i>Cruise Control<i class="fa fa-chevron-down"></i></div>
+                <ul class="submenu">
+                    <li>
+                        <h6><span><b>Cruise Control Delay</b></span></h6>
+                        <p>How many seconds it takes for cruise control to kick in.
+                            <br />
+                            <br />
+                        <p class="range-field" id="vmax-range" style="text-align: center">
+                            <b style="font-size: 16px;"><output name="cruise_control_delay_output">5</output></b><br />
+                            <input type="range" name="cruise_control_delay" class="white cfw-param" id="cruise-delay" min="1" max="10" value="5" step="1" oninput="cruise_control_delay_output.value=cruise_control_delay.value" /> <span class="left"><b>1 second</b></span><span class="right"><b>10 seconds</b></span>
+                        </p><br />
+                        <p>
+                            <label>
+                                <input type="checkbox" name="cruise_control_nobeep" class="cfw-param" /><span><b>Disable cruise control beep</b></span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" name="no_cruise_control" class="cfw-param" /><span><b>Disable cruise control</b></span>
+                            </label>
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link"><i class="material-icons">settings</i>Advanced<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu">
+                    <li>
+                        <p>
+                        <h6>Use these patches with full knowledge of what they do.</h6>
+                        <p style="padding: none !important">
+                            <label>
+                                <select id="error_raising_level" name="error_raising_level" class="cfw-param">
+                                    <option value="0">Level 0 - Raise all errors & warnings</option>
+                                    <option value="1" selected>Level 1 - Do not raise system warnings</option>
+                                    <option value="2">Level 2 - Do not raise battery mods warnings</option>
+                                    <option value="3">Level 3 - Do not raise errors/Stealth mode</option>
+                                </select> <span>Error raising level</span>
+
+                            </label>
+                            <a href="https://wiki.scooterhacking.org/doku.php?id=nberrorcodes">Learn more</a>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" name="no_overspeed_alarm" class="cfw-param" /><span><b>No overspeed alarm</b></span>
+                            </label>
+                            <br />Disables the obnoxious beeping over 35km/h.
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" name="stay_on_locked" class="cfw-param" /><span><b>Stay on when scooter is locked</b></span>
+                            </label>
+                            <br />Disables auto shutdown when the scooter is locked so it stays on forever.
+                        </p>
+                        <!--	<p>
+                                <label>
+                                    <input type="checkbox" name="reg_rw" disabled /><span><b>Set write permission for all registers</b></span>
+                                </label>
+                                <br />Allows you to write to any DRV register.
+							</p>
+                        -->
+                        <p>
+                            <label>
+                                <input type="checkbox" name="bms_uart_76800" class="cfw-param" /><span><b>Change ESC<->BMS baud rate to 76800</b></span>
+                            </label>
+                            <br />Only if you use the compatible open source BMS!
+                        </p>
+                        <p>
+                            <label>
+                                <input type="number" name="wheel_speed_const" step="1" min="100" max="500" value="315" class="cfw-param" /><span>Wheel Speed Multiplier</span>
+                                <br />For 8" wheels use 390, don't change otherwise.
+                            </label>
+
+                        </p>
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link"><i class="material-icons">check</i>Finished! Time to cook<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenutxt">
+                    <li> <b>Satisfied with your settings?</b>
+                        <p>
+                            <label>
+                                <select id="app" onchange="setOutput()">
+                                    <option disabled selected value>-- select an app --</option>
+                                    <option value="nineflasher">NineFlasher/XiaoFlasher</option>
+                                    <option value="iap">Ninebot IAP</option>
+                                    <option value="downg">ES DownG</option>
+                                    <option value="nbfun">NinebotFun</option>
+                                    <option value="nbflasher">Ninebot-Flasher</option>
+                                    <option value="bin">Debug</option>
+                                </select> <span>Select your flashing app..</span>
+                            </label>
+                            <br />
+                        </p>
+                        <br />
+                        <br /> <a href="#" id="zip2" onclick="document.getElementById('output').value = 'zip2';document.getElementById('cfwform').submit();setTimeout(coffeeRedirect, 9000);" class="waves-effect waves-light btn" style="left: 20px;"><i class="material-icons right" style="left: 20px;">archive</i>Download ZIP</a>
+                        <a href="#" id="enc" onclick="document.getElementById('output').value = 'enc';document.getElementById('cfwform').submit();setTimeout(coffeeRedirect, 9000);" class="waves-effect waves-light btn"><i class="material-icons right" style="left: 20px;">content_copy</i>Download ENC</a>
+                        <a href="#" id="zip" onclick="document.getElementById('output').value = 'zip';document.getElementById('cfwform').submit();setTimeout(coffeeRedirect, 9000);" class="waves-effect waves-light btn"><i class="material-icons right" style="left: 20px;">archive</i>Download legacy ZIP</a>
+                        <a href="#" id="code" onclick="document.getElementById('output').value = 'silentcode';getfwcode();" class="waves-effect waves-light btn"><i class="material-icons right" style="left: 20px;" disabled>backup</i>Get firmware code</a>
+                        <a href="#" id="bin" onclick="document.getElementById('output').value = 'bin';document.getElementById('cfwform').submit();setTimeout(coffeeRedirect, 9000);" class="waves-effect waves-light btn"><i class="material-icons right" style="left: 20px;">description</i>Download BIN</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        </li>
+        </ul>
+        <script src="../cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="../cfw.sh/global_js/cookie_utils.js"></script>
+        <script src="js/materialize.min.js"></script>
+        <script src="js/init.min.js"></script>
+        <script src="js/forms.min.js"></script>
+        <script src="js/ui.min.js"></script>
+    </form>
+    <center>
+        <font size="1">Toolkit & Web UI provided by <a href="https://scooterhacking.org/">ScooterHacking.org</a> - Patcher revision: <a href="changelog/index.html">prod|011220-1</font>
+    </center>
+</body>
+
+
+<!-- Mirrored from max.cfw.sh/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Dec 2020 10:35:27 GMT -->
+</html>

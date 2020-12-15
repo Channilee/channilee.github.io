@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+max.cfw.sh	TRUE	/	FALSE	1999999999	SameSite	Lax
+.cfw.sh	TRUE	/	FALSE	1999999999	__cfduid	dfe9bf30f439928a5fa27d2c919149c1f1608028526
+cfw.sh	TRUE	/	FALSE	1999999999	SameSite	Lax
+
