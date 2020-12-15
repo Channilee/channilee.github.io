@@ -21,7 +21,7 @@
 
 <body class="container">
     <form action="https://max.cfw.sh/submit" id="cfwform">
-        <input type="hidden" name="버젼" value="DRV126" />
+        <input type="hidden" name="version" value="DRV126" />
         <input type="hidden" name="output" id="output" value="zip2" />
         <!----- /////////////////////////// -->
 
@@ -168,7 +168,7 @@
                                     <option value="1">Eco</option>
                                     <option value="0">Drive</option>
                                     <option value="2">Sports</option>
-                                </select> <span>Boot in mode..</span>
+                                </select> <span>시작 할 때 모드..</span>
                             </label>
 
                         </p>
@@ -188,13 +188,13 @@
                                         <br />이 값은 최고속도에 영향을 주지 않습니다.
                                         <br />
                                         <br />
-                                        <small>설정 가능한 값들은 모두 기본 배터리 전압에서 테스트 되었으며 킥보드에 손상을 입히지 않았습니다. 그러나 값을 선택할때 그러나 외부 온도 상승(예: 여름), 부품 품질 또는 배터리 모드 와 같은 다른 요인을 고려하여 값을 선택해야 합니다. .</small>
+                                        <small>설정 가능한 값들은 모두 기본 배터리 전압에서 테스트 되었으며 킥보드에 손상을 입히지 않았습니다. 그러나 값을 선택할때 외부 온도 상승(예: 여름), 부품 품질 또는 배터리 모드 와 같은 다른 요인을 고려하여 값을 선택해야 합니다. .</small>
                                         <br />
                                         <br />
                                         <select id="voltage" name="voltage" onchange="default_voltage = this.value; resetCurrent();handleTheJoules(default_ampere*1000)">
                                             <option value="36" selected>36V (기본)</option>
                                             <option value="48">48V</option>
-                                        </select><span>시스템 전압 (전류 소비량 표시에만)</span><br />
+                                        </select><span>시스템 전압 (전류 소비량 표시에만 사용됨)</span><br />
 					    
                                             <br />예상 소비전력 - 공칭 <b><output name="power_output" id="power_output">350</output>W</b> | 최대 <b><output name="p_power_output" id="p_power_output">700</output>W</b>
 			    		</p>
@@ -219,7 +219,7 @@
 			    <p><b>킥보드가 설정된 속도 아래로 주행합니다. (설정한 속도로 달리려면 값을 +1 해야함)</b><br />
                                     <br />
                                 </p>
-			    <small>기본 배터리 전압으로는 (36-42V) 33Km/h 이상 달릴 수 없습니다. </small>
+			    <small>기본 배터리 전압으로는 (36-42V) 33Km/h 이상 달릴 수 없습니다. Gen2 모터는  </small>
                                 <p class="range-field" id="vmax-range">
                                     <label id="us_speed">미국 지역</label> <b style="font-size: 16px;margin-left: 53px;"><output name="speed_normal_kmh_output">33</output></b><br />
                                     <input type="range" name="speed_normal_kmh" class="white cfw-param" id="vmax" min="20" max="45" value="33" step="1" oninput="speed_normal_kmh_output.value=speed_normal_kmh.value" />
@@ -239,7 +239,7 @@
                                             <option value="reg">변경 가능, 레지스터</option>
                                             <option value="dyn">변경 가능, 브레이크</option> register enabled dpc
                                             <option value="on">항상 키기</option>
-                                        </select> <span>다이렉트 파워 컨트롤</span>
+                                        </select> <span>다이렉트 파워 컨트롤 (DPC)</span>
                                     </label>
                                     <label>
                                         <select id="direct_power_control_curve" name="direct_power_control_curve" class="cfw-param">
@@ -247,12 +247,12 @@
                                             <option value="quadratic">제곱</option>
                                         </select> <span>곡선 타입 (DPC만)</span>
                                     </label>
-                                    <br />속도 기반대신 쓰로틀이 힘-기반 알고리즘 으로 작동합니다(내연기관 같이).
+                                    <br />속도 기반대신 쓰로틀이 파워-기반 알고리즘 으로 작동합니다(내연기관 같이 작동함).
                                     <br /> <b>경고: DPC 사용중에는 속도제한이 무시됩니다. </b>
                                 </p>
                                 <p>
                                     <label><input type="number" name="current_raising_coefficient" min="100" max="16000" value="300" class="cfw-param" /><span> 전류 상승 계수 </span></label><br />
-                                    전류가 얼마나 빠르게 적용될지 결정합니다. 스로틀 속도 상승률에 영향을 줍니다. <font color="orange">최신!</font><br />
+                                    전류가 얼마나 빠르게 적용될지 결정합니다. 민감도에 영향을 줍니다. <font color="orange">최신!</font><br />
                                 </p>
 
                                 <h6><b>모터 동작 속도</b></h5>
@@ -298,7 +298,7 @@
                             </p>
                             <p>
                                 <label><input type="number" name="brake_current_raising_coefficient" min="100" max="8000" value="500" class="cfw-param" /><span>전류 상승 계수</span></label><br />
-                                 전류가 얼마나 빠르게 적용될지 결정합니다. 브레이크 상승률에 영향을 줍니다. <font color="orange">최신!</font><br />
+                                 브레이크가 얼마나 빠르게 적용될지 결정합니다. 브레이크 민감도에 영향을 줍니다. <font color="orange">최신!</font><br />
                             </p>
                             <p>
                                 <label>
