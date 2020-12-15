@@ -21,29 +21,29 @@
 
 <body class="container">
     <form action="https://max.cfw.sh/submit" id="cfwform">
-        <input type="hidden" name="version" value="DRV126" />
+        <input type="hidden" name="버젼" value="DRV126" />
         <input type="hidden" name="output" id="output" value="zip2" />
         <!----- /////////////////////////// -->
 
         <div id="disclaimer" class="modal red darken-4 white-text">
             <div class="modal-content">
-                <h4><i class="material-icons">warning</i> <a href="8ung.jpg" target="_BLANK">WARNING!!</a> Disclaimer</h4>
-                <b><u>Be aware that a higher motor power will shorten the lifetime of your battery and could damage your controller.</u></b>
+                <h4><i class="material-icons">경고</i> <a href="8ung.jpg" target="_BLANK">경고!!</a> 주의사항</h4>
+                <b><u>모터 힘을 높게 설정할수록 배터리의 수명을 줄이고 컨트롤러에 해를 입힐수 있습니다. .</u></b>
                 <br />
-                <br /> <b>You are responsible for the values you enter.</b>
-                Please remember that ScooterHacking.org or its members can not be held responsible for any damage you may cause to yourself or your scooter.
+                <br /> <b>입력한 값에 대한 책임은 본인에게 있습니다.</b>
+                ScooterHacking.org 와 회원들은 여러분 자신이나 킥보드에 어떤 손상을 입힐 수도 있는 것에 대해 책임을 질 수 없습니다.
                 <br />
-                <br />Please check local laws before riding your modded scooter on a public place.
-                <br />In countries such as Germany, modifying your scooter might void its permit. In other countries such as France, you face a fine upto 1500€ for going over the 25km/h speed limit.
-                <br /><br /><b>ScooterHacking.org and cfw.sh are not affiliated with Segway-Ninebot or any other brand.</b>
+                <br />공공 장소에서 커스텀된 킥보드를 타기전에 관계 법령을 확인하십시요
+                <br />한국에서 시속 25km/h를 초과하는 경우 관계 법령에 의거 처벌받을수 있습니다.
+                <br /><br /><b>ScooterHacking.org 와 cfw.sh 는 Segway-Ninebot 이나 다른 제조사와 연관되어 있지 않습니다..</b>
             </div>
-            <div class="modal-footer red darken-2 white-text"> <a href="#" class="modal-close btn-flat white-text">Continue</a>
+            <div class="modal-footer red darken-2 white-text"> <a href="#" class="modal-close btn-flat white-text">계속</a>
             </div>
         </div>
         <div id="paramsinfo" class="modal green darken-1 white-text" style="width: 350px;padding: 10px;">
             <div class="modal-content">
 
-                <div class="modal-footer green darken-2 white-text"> <a href="#!" class="modal-close btn-flat white-text">Continue</a>
+                <div class="modal-footer green darken-2 white-text"> <a href="#!" class="modal-close btn-flat white-text">계속</a>
                 </div>
             </div>
         </div>
@@ -51,7 +51,7 @@
         <!-- Contenedor -->
         <ul id="accordion" class="accordion effect7">
             <li>
-                <div class="link"><i class="material-icons">favorite</i>Welcome to ScooterHacking Toolkit for Ninebot Max G30<i class="fa fa-chevron-down"></i>
+                <div class="link"><i class="material-icons">favorite</i> 나인봇 맥스 G30를 위한 ScooterHacking 툴킷에 오신것을 환영합니다. <i class="fa fa-chevron-down"></i>
                 </div>
                 <ul class="submenutxt" style="display: block;">
 
@@ -59,7 +59,7 @@
                         <!-- <font color="orange">An open-beta is currently ongoing. To access the dev branch, you can click <a href="/dev">HERE</a>.</font></p> -->
                         <p>
                         <div class="row s10">
-                            <div class="col s5">Download plain vanilla firmware by <u><a href="https://cfw.sh/blob/VlYMt8s_4GZKYChb5gW3zA/DRV126-VANILLA.zip">clicking here</a></u></div>
+                            <div class="col s5"> <u><a href="https://cfw.sh/blob/VlYMt8s_4GZKYChb5gW3zA/DRV126-VANILLA.zip">여기</a></u>를 눌러 순정펌웨어 다운받기</div>
                             <div class="col s5 right-align"><input type="button" class="btn right-align" id="themeTrigger" onClick="switchTheme();" value="DARK MODE: N/A"></div>
                         </div>
                         <!-- <b>Check a firmware code:</b>
@@ -72,11 +72,11 @@
                             <img src="img/telegram.png">Telegram</a><br />
                         <img style="position: inherit;" src="img/max-512.png" align="right" width="150" height="150" />
                         </p>
-                        <p><b><br /><br />This tool is based on the work of many community members.
-                                <br />If you feel like it, pay them a coffee.</b>
+                        <p><b><br /><br />이 툴은 커뮤니티 멤버들의 작업으로 이루어졌습니다.
+                                <br />잘 쓰고 계신다면. 커피라도 한잔 사주세요 </b>
                         </p>
                         <center>
-                            <a href="https://scooterhack.in/donate" target="_BLANK" class="chip tooltipped" data-tooltip="Backend maintainer & UI designer">
+                            <a href="https://scooterhack.in/donate" target="_BLANK" class="chip tooltipped" data-tooltip="백엔드 유지보수 & UI 디자이너">
                                 <img src="img/scooterhacking.png">ScooterHacking.org</a>
                             <a href="https://paypal.me/BotoXbz" target="_BLANK" class="chip tooltipped" data-tooltip="Creator of M365 CFW Toolkit">
                                 <img src="img/395711.png">BotoX</a>
@@ -94,25 +94,25 @@
             </li>
             <li>
                 <a href="changelog/index.html">
-                    <div class="link"><i class="material-icons">format_list_bulleted</i>Changelog</div>
+                    <div class="link"><i class="material-icons">format_list_bulleted</i>변경 기록</div>
                 </a>
             <li>
                 <div class="link"><i class="material-icons">sd_card</i>Presets<i class="fa fa-chevron-down"></i>
                 </div>
                 <ul class="submenu">
                     <li>
-                        <input type="button" class="btn" onClick="loadPreset('default');" value="Reset form">&nbsp;&nbsp;
+                        <input type="button" class="btn" onClick="loadPreset('기본');" value="Reset form">&nbsp;&nbsp;
                         <input type="button" class="btn" id="import-no-save" value="Load from params" onclick="document.getElementById('file-selector-a').click();">
                         <input type="file" id="file-selector-a" accept=".json" style="display: none;"><br />
-                        <b>ScooterHacking presets</b><br />
+                        <b>ScooterHacking 프리셋</b><br />
                         <input type="button" class="btn" onClick="loadPreset('lothean');" value="Lothean"> &nbsp;
                         <input type="button" class="btn" onClick="loadPreset('shmax');" value="SHMax"> &nbsp;
                         <input type="button" class="btn" onClick="loadPreset('rp');" value="Voreingestellt">
                         <br /><br />
-                        <b>REMEMBER</b>
-                        <br />Although we have tested these presets, there are no guarantees that they will not break your scooter.<br />Drive responsible!</p>
-                        <b>User preset</b>
-                        <font color="orange">Beta!</font><br />
+                        <b>주의</b>
+                        <br />이 프리셋들을 테스트하긴 했지만, 킥보드를 망가뜨리지 않는다는 보장은 없습니다..<br />책임있게 운전하십시오!</p>
+                        <b>유저 프리셋</b>
+                        <font color="orange">베타!</font><br />
                         This preset is stored in your browser. You can load it, overwrite it, or clear it at your convenience.<br />
                         You can import any params.json file from the patcher output.<br />
                         <input type="button" class="btn" id="load" value="Load" onclick="loadConfig();">&nbsp;&nbsp;
@@ -126,45 +126,45 @@
                 </ul>
             </li>
             <li>
-                <div class="link"><i class="material-icons">settings_input_composite</i>Basics<i class="fa fa-chevron-down"></i>
+                <div class="link"><i class="material-icons">settings_input_composite</i>기본<i class="fa fa-chevron-down"></i>
                 </div>
                 <ul class="submenu">
                     <li>
                         <p>
                             <label>
-                                <input type="checkbox" name="compat_patches" class="cfw-param" checked /><span><b>Compatibility patches</b></span>
+                                <input type="checkbox" name="compat_patches" class="cfw-param" checked /><span><b>호환성 패치</b></span>
                             </label>
-                            <br />Prepares the firmware for a modded environment. Brings back SN change, removes speedbost serial check and enforces selected patcher region.
+                            <br />수정된 환경에 맞게 펌웨어를 준비합니다. SN 변경 사항을 다시 가져오고, 속도 향상 시리얼 체크를 제거하고, 선택한 패치 적용 영역을 적용합니다.
                         </p>
                         <p>
                             <label>
                                 <select id="region" name="region" class="cfw-param">
-                                    <option value="auto">Auto. (based on serial number)</option>
-                                    <option value="us" selected>America</option>
-                                    <option value="de">Germany</option>
-                                    <option value="eu">Worldwide</option>
-                                </select> <span>Select wanted scooter region..</span>
+                                    <option value="auto">자동. (시리얼 코드에 기반하여)</option>
+                                    <option value="us" selected>미국</option>
+                                    <option value="de">독일</option>
+                                    <option value="eu">전세계</option>
+                                </select> <span>원하는 지역을 설정해주세요..</span>
                             </label>
                             <br />
                         </p>
                         <p>
                             <label>
-                                <input type="checkbox" name="remove_charging_mode" class="cfw-param" /><span><b>Remove Charging Mode</b></span>
+                                <input type="checkbox" name="remove_charging_mode" class="cfw-param" /><span><b>충전모드 제거하기</b></span>
                             </label>
-                            <br />ESC will ignore input from the charging line, scooter will be rideable during charge. Useful for non-official external batteries.
+                            <br />ESC가 충전기에서 들어오는 신호를 무시합니다. 충전중에 킥보드 사용이 가능해집니다. 비공식 배터리를 사용할 때 유용한 기능입니다
                         </p>
                         <p>
                             <label>
-                                <input type="checkbox" name="version_spoofing" id="version_spoofing" value="on" class="cfw-param" checked /><span><b>Version spoofing</b></span>
+                                <input type="checkbox" name="version_spoofing" id="version_spoofing" value="on" class="cfw-param" checked /><span><b>버젼 우회</b></span>
                             </label>
-                            <br />Makes the version number higher to prevent DRV updates from the Ninebot app.
+                            <br />버젼을 높게 만들어 나인봇 앱을 통한 DRV 업데이트를 막아줍니다.
                         </p>
 
                         <p>
-                            "Remember Last Mode" is default. Any other selection will boot the scooter into the selected Mode.
+                            "마지막 모드 기억하기" 가 기본입니다. 킥보드를 켰을때 선택한 모드로 설정됩니다
                             <label>
                                 <select id="boot_workmode" name="boot_workmode" class="cfw-param">
-                                    <option value="3" selected>Remember last mode</option>
+                                    <option value="3" selected>마지막 모드 기억하기</option>
                                     <option value="1">Eco</option>
                                     <option value="0">Drive</option>
                                     <option value="2">Sports</option>
@@ -177,33 +177,33 @@
                 </ul>
             </li>
             <li>
-                <div class="link"><i class="material-icons">whatshot</i>Power & Speed<i class="fa fa-chevron-down"></i>
+                <div class="link"><i class="material-icons">whatshot</i>파워 & 속도<i class="fa fa-chevron-down"></i>
                 </div>
                 <ul class="submenu">
                     <li>
 
-                                   <b>Battery Current Control</b> | Standard: 25A (36V)
-                                    <input type="button" onclick="resetCurrent(); handleTheJoules(default_ampere*1000);" value="reset" class="btn"><br>
-                                    <p><b>Higher = More power. Too much power is not recommended for battery and motor life.</b>
-                                        <br />This value does not affect top speed.
+                                   <b>배터리 전류 설정</b> | 기본: 25A (36V)
+                                    <input type="button" onclick="resetCurrent(); handleTheJoules(default_ampere*1000);" value="초기화" class="btn"><br>
+                                    <p><b>높을수록 많은 힘이 들어갑니다. 너무 많은 힘은 배터리와 모터 수명에 좋지 않습니다.</b>
+                                        <br />이 값은 최고속도에 영향을 주지 않습니다.
                                         <br />
                                         <br />
-                                        <small>All selectable ​​values were tested at stock battery voltage and caused no damage to the tested scooters. However, you should select a value considering other factors such as elevated ambient temperatures (e.g. in summer), differences in component quality or battery mods.</small>
+                                        <small>설정 가능한 값들은 모두 기본 배터리 전압에서 테스트 되었으며 킥보드에 손상을 입히지 않았습니다. 그러나 값을 선택할때 그러나 외부 온도 상승(예: 여름), 부품 품질 또는 배터리 모드 와 같은 다른 요인을 고려하여 값을 선택해야 합니다. .</small>
                                         <br />
                                         <br />
                                         <select id="voltage" name="voltage" onchange="default_voltage = this.value; resetCurrent();handleTheJoules(default_ampere*1000)">
-                                            <option value="36" selected>36V (default)</option>
+                                            <option value="36" selected>36V (기본)</option>
                                             <option value="48">48V</option>
-                                        </select><span>System Voltage (for estimated draw display ONLY)</span><br />
-                                        <br />Estimated draw - Nominal <b><output name="power_output" id="power_output">350</output>W</b> | Peak <b><output name="p_power_output" id="p_power_output">700</output>W</b>
-                                    </p>
-
+                                        </select><span>시스템 전압 (전류 소비량 표시에만)</span><br />
+					    
+                                            <br />예상 소비전력 - 공칭 <b><output name="power_output" id="power_output">350</output>W</b> | 최대 <b><output name="p_power_output" id="p_power_output">700</output>W</b>
+			    		</p>
                                     <p class="range-wrap" style="text-align: center">
                                         <b style="font-size: 16px;"><output name="speed_normal_battery_output" id="speed_normal_battery_output">25</output>A</b><br />
                                         <input id="speed_normal_battery" name="speed_normal_battery" type="range" min="10000" max="65000" value="25000" step="1000" oninput="handleTheJoules(this.value);" class="cfw-param" />
                                         <br />
-                                        <span class="left"><i class="material-icons white-text icon-pull-down">keyboard_arrow_left</i><b>Range</b></span>
-                                        <span class="right"><b>Torque</b><i class="material-icons white-text icon-pull-down">keyboard_arrow_right</i></span>
+                                        <span class="left"><i class="material-icons white-text icon-pull-down">keyboard_arrow_left</i><b>거리</b></span>
+                                        <span class="right"><b>토크</b><i class="material-icons white-text icon-pull-down">keyboard_arrow_right</i></span>
                                     </p><br />
                                     <p id="phases_info" style="display: none"><b>Phase Current Control</b> | Standard: 55A</p>
                                     <p id="phases" class="range-wrap" style="text-align: center; display: none">
@@ -215,30 +215,30 @@
                                     <br />
 
 
-                            <h6><b>Max speed</b></h5>
-                                <p><b>The scooter will stay below this speed. (Add +1 to actually drive this fast)</b><br />
+                            <h6><b>최고 속도 </b></h5>
+			    <p><b>킥보드가 설정된 속도 아래로 주행합니다. (설정한 속도로 달리려면 값을 +1 해야함)</b><br />
                                     <br />
                                 </p>
-                                <small>With stock battery voltage (36-42V), the scooter will not go faster than 33km/h at full charge.</small>
+			    <small>기본 배터리 전압으로는 (36-42V) 시속 33키로 이상 달릴 수 없습니다. </small>
                                 <p class="range-field" id="vmax-range">
-                                    <label id="us_speed">US region</label> <b style="font-size: 16px;margin-left: 53px;"><output name="speed_normal_kmh_output">33</output></b><br />
+                                    <label id="us_speed">미국 지역</label> <b style="font-size: 16px;margin-left: 53px;"><output name="speed_normal_kmh_output">33</output></b><br />
                                     <input type="range" name="speed_normal_kmh" class="white cfw-param" id="vmax" min="20" max="45" value="33" step="1" oninput="speed_normal_kmh_output.value=speed_normal_kmh.value" />
-                                    <label id="eu_speed">Worldwide region</label> <b style="font-size: 16px;margin-left: 8px;"><output name="speed_normal_kmh_eu_output" id="speed_normal_kmh_eu_output">27</output></b><br />
+                                    <label id="eu_speed">Worldwide 지역</label> <b style="font-size: 16px;margin-left: 8px;"><output name="speed_normal_kmh_eu_output" id="speed_normal_kmh_eu_output">27</output></b><br />
                                     <input type="range" name="speed_normal_kmh_eu" class="white cfw-param" id="vmax_eu" min="20" max="45" value="27" step="1" oninput="speed_normal_kmh_eu_output.value=speed_normal_kmh_eu.value" />
-                                    <label id="de_speed">DE region</label> <b style="font-size: 16px;margin-left: 52px;"><output name="speed_normal_kmh_de_output" id="speed_normal_kmh_de_output">22</output></b><br />
+                                    <label id="de_speed">독일 지역</label> <b style="font-size: 16px;margin-left: 52px;"><output name="speed_normal_kmh_de_output" id="speed_normal_kmh_de_output">22</output></b><br />
                                     <input type="range" name="speed_normal_kmh_de" class="white cfw-param" id="vmax_de" min="20" max="45" value="22" step="1" oninput="speed_normal_kmh_de_output.value=speed_normal_kmh_de.value" />
                                     <span class="left"><b>20 km/h</b></span><span class="right"><b>45 km/h</b></span>
                                 </p><br />
                                 <p>
-                                    <label><input type="checkbox" id="patch_all" name="patch_all" onchange="handleTheWorld();" class="cfw-param" /><span>Patch for all serial numbers?</span></label><br />
+                                    <label><input type="checkbox" id="patch_all" name="patch_all" onchange="handleTheWorld();" class="cfw-param" /><span>모든 시리얼 넘버에 적용할까요?</span></label><br />
                                 </p>
                                 <p>
                                     <label>
                                         <select id="direct_power_control" name="direct_power_control" class="cfw-param">
-                                            <option value="off" selected>Always off, speed-based</option>
-                                            <option value="reg">Switchable, register</option>
-                                            <option value="dyn">Switchable, brake</option>
-                                            <option value="on">Always on</option>
+						<option value="off" selected>항상 끄기,속도 기반 </option>
+                                            <option value="reg">변경 가능, 레지스터</option>
+                                            <option value="dyn">변경 가능, 브레이크</option> register enabled dpc
+                                            <option value="on">항상 키기</option>
                                         </select> <span>Direct power control</span>
                                     </label>
                                     <label>
@@ -247,16 +247,16 @@
                                             <option value="quadratic">Quadratic</option>
                                         </select> <span>Curve type (DPC only)</span>
                                     </label>
-                                    <br />Instead of speed-based, the throttle will work on a power-based algorithm (like in a thermal engine vehicle).
-                                    <br /> <b>WARNING: Speed limit is ignored while using DPC.</b>
+                                    <br />속도 기반대신 쓰로틀이 힘-기반 알고리즘 으로 작동합니다(like in a thermal engine vehicle).
+                                    <br /> <b>경고: DPC 사용중에는 속도제한이 무시됩니다. </b>
                                 </p>
                                 <p>
-                                    <label><input type="number" name="current_raising_coefficient" min="100" max="16000" value="300" class="cfw-param" /><span>Current raising coefficient</span></label><br />
-                                    How fast current will be applied. Affecting throttle speed up rate. <font color="orange">Updated!</font><br />
+                                    <label><input type="number" name="current_raising_coefficient" min="100" max="16000" value="300" class="cfw-param" /><span> 전류 상승 계수 </span></label><br />
+                                    전류가 얼마나 빠르게 적용될지 결정합니다. 스로틀 속도 상승률에 영향을 줍니다  <font color="orange">최신!</font><br />
                                 </p>
 
-                                <h6><b>Motor Start Speed</b></h5>
-                                    <p><b>Minimum speed in km/h before the motor will start.</b><br /></p>
+                                <h6><b>모터 동작 속도</b></h5>
+                                    <p><b>모터가 시작되는 최소 속도.</b><br /></p>
                                     <p class="range-field" id="startspeed-range" style="text-align: center">
                                         <b style="font-size: 16px;"><output name="motor_start_speed_output">5</output></b><br />
                                         <input type="range" name="motor_start_speed" class="white cfw-param" id="mpc" min="0" max="10" value="5" step="1" oninput="motor_start_speed_output.value=motor_start_speed.value" />
@@ -271,19 +271,19 @@
                 <div class="link"><i class="material-icons">settings_backup_restore</i>Braking & energy recovery<i class="fa fa-chevron-down"></i></div>
                 <ul class="submenu">
                     <li>
-                        <b>Brake lever params</b> | Standard: 120 / 6A / 35A <input type="button" onclick="resetBrake();" value="reset" class="btn"><br>
+                        <b>브레이크 레버 변수</b> | Standard: 120 / 6A / 35A <input type="button" onclick="resetBrake();" value="reset" class="btn"><br>
                         <p class="range-field" id="brake-range">
-                            <label id="brake_limit_label">Lever virtual limit</label> <b style="font-size: 16px;margin-left: 8px;"><output name="brake_limit_output" id="brake_limit_output">120</output></b><br />
+                            <label id="brake_limit_label">레버 가상 한계</label> <b style="font-size: 16px;margin-left: 8px;"><output name="brake_limit_output" id="brake_limit_output">120</output></b><br />
                             <input id="brake_limit" name="brake_limit" type="range" min="1" max="130" value="120" step="1" oninput="brake_limit_output.value=(brake_limit.value);" class="cfw-param" />
-                            <label id="brake_i_min_label">Minimum phase current</label> <b style="font-size: 16px;margin-left: 8px;"><output name="brake_i_min_output" id="brake_i_min_output">6</output>A</b><br />
+                            <label id="brake_i_min_label">최소 페이즈 전류</label> <b style="font-size: 16px;margin-left: 8px;"><output name="brake_i_min_output" id="brake_i_min_output">6</output>A</b><br />
                             <input id="brake_i_min" name="brake_i_min" type="range" min="1000" max="50000" value="6000" step="1000" oninput="brake_i_min_output.value=(brake_i_min.value/1000)" class="cfw-param" />
-                            <label id="brake_i_max_label">Maximum phase current</label> <b style="font-size: 16px;margin-left: 8px;"><output name="brake_i_max_output" id="brake_i_max_output">35</output>A</b><br />
+                            <label id="brake_i_max_label">최대 페이즈 전류</label> <b style="font-size: 16px;margin-left: 8px;"><output name="brake_i_max_output" id="brake_i_max_output">35</output>A</b><br />
                             <input id="brake_i_max" name="brake_i_max" type="range" min="1000" max="50000" value="35000" step="1000" oninput="brake_i_max_output.value=(brake_i_max.value/1000)" class="cfw-param" />
                             <span class="left"><b>Less</b></span><span class="right"><b>More</b></span>
                         </p>
                         <br /> <br />
-                        <h6><b>KERS Min Speed</b></h5>
-                            <p><b>Speed in km/h at which the scooter will start braking on it's own when the motor is not active.</b><br /></p>
+                        <h6><b>전자 브레이크 최소 속도</b></h5>
+                            <p><b>모터가 활성화되지 않았을 때 킥보드가 스스로 브레이크를 밟기 시작하는 속도(km/h) </b><br /></p>
                             <p class="range-field" id="kersminspeed-range" style="text-align: center">
                                 <b style="font-size: 16px;"><output name="kers_min_speed_output">6</output></b><br />
                                 <input type="range" name="kers_min_speed" class="white cfw-param" id="kers_min_speed" min="0" max="10" value="6" step="1" oninput="kers_min_speed_output.value=kers_min_speed.value" />
@@ -292,28 +292,28 @@
 
                             <br /><br />
                             <p>
-                                <label><input type="checkbox" name="no_kers" class="cfw-param" /><span><b>No KERS</b></span></label><br />
-                                The scooter won't start braking on it's own when the motor is not active.
-                                You will still have recuperative braking when using the brake lever. <b>Clonk-free.</b> <br>
+                                <label><input type="checkbox" name="no_kers" class="cfw-param" /><span><b>전자브레이크 비활성화</b></span></label><br />
+                                모터가 작동하지 않을 때 킥보드는 스스로 브레이크를 밟지 않습니다.
+					브레이크 레버 사용 시엔 회생 제동력이 유지됩니다. <b>덜컥임 없음.</b> <br>
                             </p>
                             <p>
-                                <label><input type="number" name="brake_current_raising_coefficient" min="100" max="8000" value="500" class="cfw-param" /><span>Current raising coefficient</span></label><br />
-                                How fast current will be applied. Affecting brake speed up rate. <font color="orange">Updated!</font><br />
+                                <label><input type="number" name="brake_current_raising_coefficient" min="100" max="8000" value="500" class="cfw-param" /><span>전류 상승 계수</span></label><br />
+                                 전류가 얼마나 빠르게 적용될지 결정합니다. 브레이크 상승률에 영향을 줍니다<font color="orange">최신!</font><br />
                             </p>
                             <p>
                                 <label>
                                     <select id="brake_light_mode" name="brake_light_mode" class="cfw-param">
-                                        <option value="stock" selected>Default</option>
-                                        <option value="static">Static</option>
-                                        <option value="reversed">Reversed</option>
-                                        <option value="strobe">Strobe</option>
-                                    </select> <span>Brake light mode</span>
+                                        <option value="stock" selected>기본</option>
+                                        <option value="static">켜짐</option>
+                                        <option value="reversed">뒤바뀐</option>
+                                        <option value="strobe">깜빡이는</option>
+                                    </select> <span>브레이크 레버 불빛</span>
                                 </label>
 
                             </p>
                             <p>
                                 <label>
-                                    <input type="number" name="brake_light_flash_frequency" step="1" min="0" max="255" value="235" class="cfw-param" /><span>Brake light flash frequency</span>
+                                    <input type="number" name="brake_light_flash_frequency" step="1" min="0" max="255" value="235" class="cfw-param" /><span>브레이크 불 점등 빈도</span>
                                     <br />
                                 </label>
 
@@ -323,60 +323,60 @@
                 </ul>
             </li>
             <li>
-                <div class="link"><i class="material-icons">loupe</i>Cruise Control<i class="fa fa-chevron-down"></i></div>
+                <div class="link"><i class="material-icons">loupe</i>크루즈 컨트롤<i class="fa fa-chevron-down"></i></div>
                 <ul class="submenu">
                     <li>
-                        <h6><span><b>Cruise Control Delay</b></span></h6>
-                        <p>How many seconds it takes for cruise control to kick in.
+                        <h6><span><b>크루즈 컨트롤 딜레이</b></span></h6>
+                        <p>크루즈 컨트롤이 설정한 시간에 시작됩니다.
                             <br />
                             <br />
                         <p class="range-field" id="vmax-range" style="text-align: center">
                             <b style="font-size: 16px;"><output name="cruise_control_delay_output">5</output></b><br />
-                            <input type="range" name="cruise_control_delay" class="white cfw-param" id="cruise-delay" min="1" max="10" value="5" step="1" oninput="cruise_control_delay_output.value=cruise_control_delay.value" /> <span class="left"><b>1 second</b></span><span class="right"><b>10 seconds</b></span>
+                            <input type="range" name="cruise_control_delay" class="white cfw-param" id="cruise-delay" min="1" max="10" value="5" step="1" oninput="cruise_control_delay_output.value=cruise_control_delay.value" /> <span class="left"><b>1 초</b></span><span class="right"><b>10 초</b></span>
                         </p><br />
                         <p>
                             <label>
-                                <input type="checkbox" name="cruise_control_nobeep" class="cfw-param" /><span><b>Disable cruise control beep</b></span>
+                                <input type="checkbox" name="cruise_control_nobeep" class="cfw-param" /><span><b>크루즈 컨트롤 비프음 끄기</b></span>
                             </label>
                         </p>
                         <p>
                             <label>
-                                <input type="checkbox" name="no_cruise_control" class="cfw-param" /><span><b>Disable cruise control</b></span>
+                                <input type="checkbox" name="no_cruise_control" class="cfw-param" /><span><b>크루즈 컨트롤 끄기</b></span>
                             </label>
                         </p>
                     </li>
                 </ul>
             </li>
             <li>
-                <div class="link"><i class="material-icons">settings</i>Advanced<i class="fa fa-chevron-down"></i>
+                <div class="link"><i class="material-icons">settings</i>고급<i class="fa fa-chevron-down"></i>
                 </div>
                 <ul class="submenu">
                     <li>
                         <p>
-                        <h6>Use these patches with full knowledge of what they do.</h6>
+                        <h6>무슨일을 하는지 알만큼 충분한 지식을 가지고 사용하십시오.</h6>
                         <p style="padding: none !important">
                             <label>
                                 <select id="error_raising_level" name="error_raising_level" class="cfw-param">
-                                    <option value="0">Level 0 - Raise all errors & warnings</option>
-                                    <option value="1" selected>Level 1 - Do not raise system warnings</option>
-                                    <option value="2">Level 2 - Do not raise battery mods warnings</option>
-                                    <option value="3">Level 3 - Do not raise errors/Stealth mode</option>
-                                </select> <span>Error raising level</span>
+                                    <option value="0">레벨 0 - 모든 에러 & 경고</option>
+                                    <option value="1" selected>레벨 1 - 시스템 경고 무시</option>
+                                    <option value="2">레벨 2 - 배터리 경고 무시</option>
+                                    <option value="3">레벨 3 - 에러 무시 / 스텔스 모드 </option>
+                                </select> <span>에러 레벨</span>
 
                             </label>
                             <a href="https://wiki.scooterhacking.org/doku.php?id=nberrorcodes">Learn more</a>
                         </p>
                         <p>
                             <label>
-                                <input type="checkbox" name="no_overspeed_alarm" class="cfw-param" /><span><b>No overspeed alarm</b></span>
+                                <input type="checkbox" name="no_overspeed_alarm" class="cfw-param" /><span><b>과속 알람 끄기</b></span>
                             </label>
-                            <br />Disables the obnoxious beeping over 35km/h.
+                            <br />시속 35Km/h를 넘겼을때 나는 불쾌한 알람이 꺼집니다
                         </p>
                         <p>
                             <label>
-                                <input type="checkbox" name="stay_on_locked" class="cfw-param" /><span><b>Stay on when scooter is locked</b></span>
+                                <input type="checkbox" name="stay_on_locked" class="cfw-param" /><span><b>킥보드가 잠금되었을때 계속 켜두기</b></span>
                             </label>
-                            <br />Disables auto shutdown when the scooter is locked so it stays on forever.
+                            <br />킥보드 잠겨있을때 자동으로 꺼지는걸 방지해줍니다.
                         </p>
                         <!--	<p>
                                 <label>
@@ -387,14 +387,14 @@
                         -->
                         <p>
                             <label>
-                                <input type="checkbox" name="bms_uart_76800" class="cfw-param" /><span><b>Change ESC<->BMS baud rate to 76800</b></span>
+                                <input type="checkbox" name="bms_uart_76800" class="cfw-param" /><span><b> ESC<->BMS 간의 baud rate 를 76800 으로 바꾸기</b></span>
                             </label>
-                            <br />Only if you use the compatible open source BMS!
+                            <br />오픈소스 BMS를 사용할때만 체크하세요!
                         </p>
                         <p>
                             <label>
-                                <input type="number" name="wheel_speed_const" step="1" min="100" max="500" value="315" class="cfw-param" /><span>Wheel Speed Multiplier</span>
-                                <br />For 8" wheels use 390, don't change otherwise.
+                                <input type="number" name="wheel_speed_const" step="1" min="100" max="500" value="315" class="cfw-param" /><span>휠 속도 멀티플라이어</span>
+                                <br />8인치 휠은 390을 사용하세요, 아니면 바꾸지 마세요
                             </label>
 
                         </p>
@@ -406,18 +406,18 @@
                 <div class="link"><i class="material-icons">check</i>Finished! Time to cook<i class="fa fa-chevron-down"></i>
                 </div>
                 <ul class="submenutxt">
-                    <li> <b>Satisfied with your settings?</b>
+                    <li> <b>설정에 만족하셨나요?</b>
                         <p>
                             <label>
                                 <select id="app" onchange="setOutput()">
-                                    <option disabled selected value>-- select an app --</option>
+                                    <option disabled selected value>-- 앱을 선택해 주세요 --</option>
                                     <option value="nineflasher">NineFlasher/XiaoFlasher</option>
                                     <option value="iap">Ninebot IAP</option>
                                     <option value="downg">ES DownG</option>
                                     <option value="nbfun">NinebotFun</option>
                                     <option value="nbflasher">Ninebot-Flasher</option>
                                     <option value="bin">Debug</option>
-                                </select> <span>Select your flashing app..</span>
+                                </select> <span>사용할 앱을 선택해주세요....</span>
                             </label>
                             <br />
                         </p>
@@ -441,7 +441,7 @@
         <script src="js/ui.min.js"></script>
     </form>
     <center>
-        <font size="1">Toolkit & Web UI provided by <a href="https://scooterhacking.org/">ScooterHacking.org</a> - Patcher revision: <a href="changelog/index.html">prod|011220-1</font>
+        <font size="1">Toolkit & Web UI 는 <a href="https://scooterhacking.org/">ScooterHacking.org</a> 에서 제공되었습니다. - Patcher revision: <a href="changelog/index.html">prod|011220-1</font>
     </center>
 </body>
 
