@@ -60,12 +60,12 @@
                         <p>
                         <div class="row s10">
                             <div class="col s5"> <u><a href="https://cfw.sh/blob/VlYMt8s_4GZKYChb5gW3zA/DRV126-VANILLA.zip">여기</a></u>를 눌러 순정펌웨어 다운받기</div>
-                            <div class="col s5 right-align"><input type="button" class="btn right-align" id="themeTrigger" onClick="switchTheme();" value="DARK MODE: N/A"></div>
+                            <div class="col s5 right-align"><input type="button" class="btn right-align" id="themeTrigger" onClick="switchTheme();" value="korean by ES4M365"></div>
                         </div>
                         <!-- <b>Check a firmware code:</b>
                             <br />
                             <input style="width: 52.5%" type="text" name="check" id="check" size="16" pattern="^[a-z0-9_\-]+$" /><a href="#" onclick="getTextVanilla();" class="waves-effect waves-light btn" style="width: 50%; position: absolute;"><i class="material-icons right">info</i>Check</a> -->
-                        <b>Join us on </b>
+                        <b>저희와 함게 하세요! </b>
                         <a href="https://scooterhack.in/discord" target="_BLANK" class="chip">
                             <img src="img/discord.png">Discord</a>
                         <a href="https://scooterhack.in/tgchat" target="_BLANK" class="chip tooltipped" data-tooltip="@scooterhackingchat">
@@ -78,15 +78,15 @@
                         <center>
                             <a href="https://scooterhack.in/donate" target="_BLANK" class="chip tooltipped" data-tooltip="백엔드 유지보수 & UI 디자이너">
                                 <img src="img/scooterhacking.png">ScooterHacking.org</a>
-                            <a href="https://paypal.me/BotoXbz" target="_BLANK" class="chip tooltipped" data-tooltip="Creator of M365 CFW Toolkit">
+                            <a href="https://paypal.me/BotoXbz" target="_BLANK" class="chip tooltipped" data-tooltip="M365 CFW Toolkit 개발자">
                                 <img src="img/395711.png">BotoX</a>
-                            <a href="https://paypal.me/majsinko" target="_BLANK" class="chip tooltipped" data-tooltip="CFW Scripting">
+                            <a href="https://paypal.me/majsinko" target="_BLANK" class="chip tooltipped" data-tooltip="커스텀 펌웨어 스크립팅">
                                 <img src="img/5780472.png">majsi</a>
-                            <a href="https://paypal.me/camialfa" target="_BLANK" class="chip tooltipped" data-tooltip="Creator of ES downG & M365 downG">
+                            <a href="https://paypal.me/camialfa" target="_BLANK" class="chip tooltipped" data-tooltip="ES downG & M365 downG 개발자">
                                 <img src="img/downg.png">CamiAlfa</a>
-                            <a href="https://rollerplausch.com/" target="_BLANK" class="chip tooltipped" data-tooltip="Original UI designer">
+                            <a href="https://rollerplausch.com/" target="_BLANK" class="chip tooltipped" data-tooltip="오리지널 UI 디자이너">
                                 <img src="img/rollerplausch.png"> RollerPlausch.com</a>
-                            <a href="#" class="chip tooltipped" data-tooltip="New web & embedded UI designer">
+                            <a href="#" class="chip tooltipped" data-tooltip="새로운 웹 & 임베디드 UI 디자이너">
                                 <img src="img/knocker.png">Knocker</a>
                         </center>
                     </li>
@@ -97,7 +97,7 @@
                     <div class="link"><i class="material-icons">format_list_bulleted</i>변경 기록</div>
                 </a>
             <li>
-                <div class="link"><i class="material-icons">sd_card</i>Presets<i class="fa fa-chevron-down"></i>
+                <div class="link"><i class="material-icons">sd_card</i>프리셋<i class="fa fa-chevron-down"></i>
                 </div>
                 <ul class="submenu">
                     <li>
@@ -219,7 +219,7 @@
 			    <p><b>킥보드가 설정된 속도 아래로 주행합니다. (설정한 속도로 달리려면 값을 +1 해야함)</b><br />
                                     <br />
                                 </p>
-			    <small>기본 배터리 전압으로는 (36-42V) 시속 33키로 이상 달릴 수 없습니다. </small>
+			    <small>기본 배터리 전압으로는 (36-42V) 33Km/h 이상 달릴 수 없습니다. </small>
                                 <p class="range-field" id="vmax-range">
                                     <label id="us_speed">미국 지역</label> <b style="font-size: 16px;margin-left: 53px;"><output name="speed_normal_kmh_output">33</output></b><br />
                                     <input type="range" name="speed_normal_kmh" class="white cfw-param" id="vmax" min="20" max="45" value="33" step="1" oninput="speed_normal_kmh_output.value=speed_normal_kmh.value" />
@@ -239,20 +239,20 @@
                                             <option value="reg">변경 가능, 레지스터</option>
                                             <option value="dyn">변경 가능, 브레이크</option> register enabled dpc
                                             <option value="on">항상 키기</option>
-                                        </select> <span>Direct power control</span>
+                                        </select> <span>다이렉트 파워 컨트롤</span>
                                     </label>
                                     <label>
                                         <select id="direct_power_control_curve" name="direct_power_control_curve" class="cfw-param">
-                                            <option value="flat" selected>Flat</option>
-                                            <option value="quadratic">Quadratic</option>
-                                        </select> <span>Curve type (DPC only)</span>
+                                            <option value="flat" selected>평평한</option>
+                                            <option value="quadratic">제곱</option>
+                                        </select> <span>곡선 타입 (DPC만)</span>
                                     </label>
-                                    <br />속도 기반대신 쓰로틀이 힘-기반 알고리즘 으로 작동합니다(like in a thermal engine vehicle).
+                                    <br />속도 기반대신 쓰로틀이 힘-기반 알고리즘 으로 작동합니다(내연기관 같이).
                                     <br /> <b>경고: DPC 사용중에는 속도제한이 무시됩니다. </b>
                                 </p>
                                 <p>
                                     <label><input type="number" name="current_raising_coefficient" min="100" max="16000" value="300" class="cfw-param" /><span> 전류 상승 계수 </span></label><br />
-                                    전류가 얼마나 빠르게 적용될지 결정합니다. 스로틀 속도 상승률에 영향을 줍니다  <font color="orange">최신!</font><br />
+                                    전류가 얼마나 빠르게 적용될지 결정합니다. 스로틀 속도 상승률에 영향을 줍니다. <font color="orange">최신!</font><br />
                                 </p>
 
                                 <h6><b>모터 동작 속도</b></h5>
@@ -298,7 +298,7 @@
                             </p>
                             <p>
                                 <label><input type="number" name="brake_current_raising_coefficient" min="100" max="8000" value="500" class="cfw-param" /><span>전류 상승 계수</span></label><br />
-                                 전류가 얼마나 빠르게 적용될지 결정합니다. 브레이크 상승률에 영향을 줍니다<font color="orange">최신!</font><br />
+                                 전류가 얼마나 빠르게 적용될지 결정합니다. 브레이크 상승률에 영향을 줍니다. <font color="orange">최신!</font><br />
                             </p>
                             <p>
                                 <label>
@@ -327,7 +327,7 @@
                 <ul class="submenu">
                     <li>
                         <h6><span><b>크루즈 컨트롤 딜레이</b></span></h6>
-                        <p>크루즈 컨트롤이 설정한 시간에 시작됩니다.
+                        <p>크루즈 컨트롤이 설정한 시간에 맞춰 시작됩니다.
                             <br />
                             <br />
                         <p class="range-field" id="vmax-range" style="text-align: center">
@@ -403,7 +403,7 @@
                 </ul>
             </li>
             <li>
-                <div class="link"><i class="material-icons">check</i>Finished! Time to cook<i class="fa fa-chevron-down"></i>
+                <div class="link"><i class="material-icons">check</i>끝! 놀아볼 시간!<i class="fa fa-chevron-down"></i>
                 </div>
                 <ul class="submenutxt">
                     <li> <b>설정에 만족하셨나요?</b>
@@ -441,7 +441,7 @@
         <script src="js/ui.min.js"></script>
     </form>
     <center>
-        <font size="1">Toolkit & Web UI 는 <a href="https://scooterhacking.org/">ScooterHacking.org</a> 에서 제공되었습니다. - Patcher revision: <a href="changelog/index.html">prod|011220-1</font>
+        <font size="1">Toolkit & Web UI 는 <a href="https://scooterhacking.org/">ScooterHacking.org</a> 에서 제공되었습니다. - Patcher revision: <a href="changelog/index.html">prod|011220-1 sorry scootmembers!</font>
     </center>
 </body>
 
