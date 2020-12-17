@@ -1,0 +1,7 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.cfw.sh	TRUE	/	FALSE	1999999999	__cfduid	dcd488efd4fffa516d5d2d2a9b0b8860e1608199385
+pro.cfw.sh	TRUE	/	FALSE	1999999999	SameSite	Lax
+www.weetechsolution.com	TRUE	/	FALSE	1999999999	PHPSESSID	701d27aa811e4bebe2344bfd959dc194
+www.weetechsolution.com	TRUE	/	FALSE	1999999999	ci_session	a%3A5%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A32%3A%22d764a37e4c4ac9469024a6348aa9e501%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A13%3A%22125.176.0.131%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A50%3A%22Mozilla%2F4.5+%28compatible%3B+HTTrack+3.0x%3B+Windows+98%29%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1608199399%3Bs%3A9%3A%22user_data%22%3Bs%3A0%3A%22%22%3B%7D740c9ed46a645b0a84f8edc9fa483b90eb7eb689
+
